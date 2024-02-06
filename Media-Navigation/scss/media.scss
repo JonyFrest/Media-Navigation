@@ -1,0 +1,43 @@
+
+
+@media screen and (max-width: 800px) {
+
+    .open,
+    .close {
+        display: block;
+    }
+
+    .close {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    .switcher:checked~nav {
+        right: 0;
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(-2deg, #007e3b, #1be7fe);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        transition: .7s;
+
+        ul {
+            flex-direction: column;
+        }
+
+        a {
+            margin-bottom: 40px;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, .03);
+            }
+        }
+    }
+}
